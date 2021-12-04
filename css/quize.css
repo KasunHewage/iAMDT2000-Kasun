@@ -160,54 +160,54 @@ body {
   box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.19);
 }
 
-.notification h1{
-  /* color: rgb(0, 255, 85);
-  color: rgb(224, 32, 32); */
+.notification h1 {
   font-size: 32px;
   font-weight: 600;
+  width: 100%;
 }
 
-footer{
+footer {
   padding-top: 100px;
   background-color: white;
 }
 
 @media only screen and (max-width: 1200px) {
-  .quiz-box{
+  .quiz-box {
     width: 40%;
   }
 
-  .notification{
+  .notification {
     width: 60%;
+    padding: 100px 20px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .quiz-box{
+  .quiz-box {
     width: 50%;
   }
 
-  .notification{
+  .notification {
     width: 70%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .quiz-box{
+  .quiz-box {
     width: 70%;
   }
 
-  .notification{
+  .notification {
     width: 60%;
   }
 }
 
 @media only screen and (max-width: 572px) {
-  .quiz-box{
+  .quiz-box {
     width: 90%;
   }
 
-  .notification{
+  .notification {
     width: 90%;
   }
 }

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 3,
     spaceBetween: 10,
     autoplay: {
-      delay: 3000,
+      delay: 1500,
     },
     loop: true,
   });
