@@ -1,33 +1,103 @@
 const questions = [
   {
     id: 01,
-    question: "What is AMDT?",
+    question: "Creativity starts in?",
     answers: {
-      a: "Answer 01",
-      b: "Answer 02",
-      c: "Answer 03",
+      a: "AMDT",
+      b: "Somewhere else",
+      c: "I don't know",
     },
-    correctAnswer: "Answer 01",
+    correctAnswer: "AMDT",
   },
   {
     id: 02,
-    question: "What is Sri Lanka?",
+    question: "When was the AMDT established?",
     answers: {
-      a: "Answer 04",
-      b: "Answer 05",
-      c: "Answer 06",
+      a: "1998",
+      b: "2005",
+      c: "2012",
     },
-    correctAnswer: "Answer 05",
+    correctAnswer: "2005",
   },
   {
     id: 03,
-    question: "What are we?",
+    question: "What does AMDT stands for?",
     answers: {
-      a: "Answer 07",
-      b: "Answer 08",
-      c: "Answer 09",
+      a: "I don't know",
+      b: "Acedemy Multinational Development Training",
+      c: "Academy of Multimedia Design and Technology",
     },
-    correctAnswer: "Answer 09",
+    correctAnswer: "Academy of Multimedia Design and Technology",
+  },
+  {
+    id: 04,
+    question: "What does AMDT do?",
+    answers: {
+      a: "Inspiring Creative Minds",
+      b: "Making you creative",
+      c: "Teaching you the life",
+    },
+    correctAnswer: "Inspiring Creative Minds",
+  },
+  {
+    id: 05,
+    question: "How old AMDT is?",
+    answers: {
+      a: "16",
+      b: "8",
+      c: "20",
+    },
+    correctAnswer: "16",
+  },
+  {
+    id: 06,
+    question: "What program is used to make vector images?",
+    answers: {
+      a: "Photoshop",
+      b: "After Effects",
+      c: "illustrator",
+    },
+    correctAnswer: "illustrator",
+  },
+  {
+    id: 07,
+    question: "Color can be used to:",
+    answers: {
+      a: "Provoke emotion",
+      b: "Group elements together or isolate them",
+      c: "All of these",
+    },
+    correctAnswer: "All of these",
+  },
+  {
+    id: 08,
+    question: "What does 'ai' stand for regarding graphic design software?",
+    answers: {
+      a: "Adobe Indesign",
+      b: "Photoshop",
+      c: "Adobe illustrator",
+    },
+    correctAnswer: "Adobe illustrator",
+  },
+  {
+    id: 09,
+    question: "Which image file format most commonly supports animation?",
+    answers: {
+      a: ".jpg",
+      b: ".psd",
+      c: ".gif",
+    },
+    correctAnswer: ".gif",
+  },
+  {
+    id: 10,
+    question: "What is the correct color mode for files to be printed?",
+    answers: {
+      a: "CMYK",
+      b: "GREYSCALE",
+      c: "RGB",
+    },
+    correctAnswer: "CMYK",
   },
 ];
 
@@ -112,13 +182,17 @@ submitBtn.addEventListener("click", () => {
     givenAnswer: userAnswer,
   });
 
+  console.log(inputedAnswers);
+
   questionNumber++;
   query = questions[questionNumber];
 
+  // enable get result button
   if (questionNumber + 1 == questions.length) {
     submitBtn.innerHTML = "Get result";
   }
 
+  // set the score
   if (questionNumber == questions.length) {
     inputedAnswers.map((obj) =>
       obj.correct == true
@@ -127,12 +201,14 @@ submitBtn.addEventListener("click", () => {
     );
 
     const style =
-      totalScore > 3
+      totalScore > 12
         ? "style = 'color: rgb(0, 255, 85);'"
         : "style='color: rgb(224, 32, 32)'";
 
     notifiText.innerHTML = `
-      <h1 ${style}>${totalScore > 3 ? "Congratulations!" : "Try harder next time!"}</h1>
+      <h1 ${style}>${
+      totalScore > 12 ? "Congratulations!" : "Try harder next time!"
+    }</h1>
       <p>${
         totalScore >= 0
           ? `You have scored ${totalScore} out of ${
