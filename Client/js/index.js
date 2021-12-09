@@ -6,6 +6,7 @@ const middle = document.querySelector(".middle");
 const last = document.querySelector(".last");
 const collapse = document.querySelector(".navbar-collapse");
 
+// scrolling behavior of navbar 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 500) {
     navigation.classList.add("navOnScroll", "container");
