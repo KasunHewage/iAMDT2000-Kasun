@@ -1,7 +1,7 @@
 # Web DevelopmentAdvanced Web &amp; App Development Studies
 
-Student Id : iAMDT2000
-name : Kasun
+Student Id : iAMDT2000,
+name : Kasun,
 
 # Client folder
 
