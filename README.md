@@ -1,7 +1,8 @@
 # Web DevelopmentAdvanced Web &amp; App Development Studies
 
     Student Id : iAMDT2000
-    name : Kasun
+    name : Kasun Hewage
+    email : kasunkhe@gmail.com
 
 # Client folder
 
