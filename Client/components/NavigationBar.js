@@ -9,18 +9,14 @@ class Navigation extends HTMLElement {
           href="#"
           src="${this.getAttribute('logo')}images/AMDT-School-of-Creativity-logo.png"
         />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        
+        <div class="navbtn">
+          <div class="first"></div>
+          <div class="middle"></div>
+          <div class="last"></div>
+        </div>
+
+        <div class="collapse navbar-collapse" >
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="${this.getAttribute('home')}index.html">Home</a>

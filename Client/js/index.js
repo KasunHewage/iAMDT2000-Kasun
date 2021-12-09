@@ -1,11 +1,30 @@
 // navigation
 const navigation = document.querySelector(".navigation");
+const navbtn = document.querySelector(".navbtn");
+const first = document.querySelector(".first");
+const middle = document.querySelector(".middle");
+const last = document.querySelector(".last");
+const collapse = document.querySelector(".navbar-collapse");
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 500) {
     navigation.classList.add("navOnScroll", "container");
   } else if (window.scrollY < 500) {
     navigation.classList.remove("navOnScroll", "container");
+  }
+});
+
+// burger icon
+navbtn.addEventListener("click", (e) => {
+  first.classList.toggle("first-animate");
+  middle.classList.toggle("middle-animate");
+  last.classList.toggle("last-animate");
+  navigation.classList.toggle("navigationbg")
+
+  if (!collapse.classList.contains("collapse")) {
+    collapse.classList.add("collapse");
+  } else {
+    collapse.classList.remove("collapse");
   }
 });
 
